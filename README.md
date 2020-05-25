@@ -1,2 +1,2 @@
-# excel-challenge
-excel-challenge - assignment 1
+# Excel-Kickstarter-Project
+
