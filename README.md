@@ -168,7 +168,19 @@ Z Statistic = -4.21 and  P value is  0.00. As the p-value is less than the signi
 <p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 34 </p>
 <p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  > 34 </p>
 
-Z Statistic = 3.12 and  P value is  0.0009. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a failed campaign is > 34 </p>**
+Z Statistic = 3.12 and  P value is  0.0009. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a failed campaign is > 34 days</p>**
 
 **A pivot table between state and staff_pick showing the count of campaigns. This is to understand if there is any advantage of being chosen as a staff_pick campaign**
+
+<div style="text-align:center"><img src="table5.png"></div>
+
+**Though only, a small percentage of the campaigns were staff picked (552 out of 3715 = 15%), once picked, campaigns show a success rate of 88%. Means, all the work needs to get packed by Kickstarter staffs seems to worth a lot. **
+
+Statistical Analysis:
+
+Chi-square test of independence is performed to validate the below hypothesis
+
+<p>Hypothesis:</p>
+<p>H0  :  Campaign states and  staff_pick feature are independent</p>
+<p>H1  :  Campaign states and  staff_pick feature are NOT independent<p>
 
