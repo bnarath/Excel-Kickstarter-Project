@@ -110,7 +110,7 @@ Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="
 We can perform z-test to validate the below hypothesis statistically. Significance level, <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01 is being used in all the tests
 
 <p>Hypothesis:</p>
-<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 150 </p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 150 </p>
 <p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> > 150 </p>
 
 Z Statistic is <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\bar{x}&space;-&space;\mu&space;}{s/\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\bar{X}&space;-&space;\mu&space;}{s/\sqrt{n}}" title="\frac{\bar{x} - \mu }{s/\sqrt{n}}" /></a>  where <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{X}" title="\bar{X}" /></a> is the sample mean, S is the standard deviation of the sample (standard error) and n is the number of samples. Z Statistic = 2.4595 and  P value is  
@@ -136,6 +136,19 @@ The below are the sample statistics that has been obtained for the goal amount.
 
 <div style="text-align:center"><img src="table3.png"></div>
 
-Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the the mean of the goal amount for the successful and failed campaigns respectively. Here also, for the same reasons explained in section <a href="#z-test">, z-test can be performed
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the the mean of the goal amount for the successful and failed campaigns respectively. Here also, for the same reasons explained in section <a href="#z-test">above</a>, z-test can be performed
+  
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 150,000 </p>
+<p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> < 150,000 </p>
+
+Z Statistic = -11.05 and  P value is  0.00. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average goal amount  for a successful campaign is < 15,000</p>**
+
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 30,000 </p>
+<p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  > 30,000 </p>
+
+Z Statistic = 2.86 and  P value is  0.0021. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average goal amount  for a failed campaign is > 30,000 </p>**
 
 
