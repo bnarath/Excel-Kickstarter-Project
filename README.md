@@ -194,4 +194,4 @@ df = 1
 <a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> statistic > <a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> critical value
 
 Alternatively, p value is 0 which is less than 0.01. Hence the Null hypothesis is rejected. 
-**<p style="color:red">Implies, Campaign states and  staff_pick feature are NOT independent</p>**
+<p style="color:red">Implies, Campaign states and  staff_pick feature are NOT independent</p>
