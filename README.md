@@ -124,12 +124,12 @@ Z Statistic is <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\bar{x}
 Z Statistic = -20.56 and  P value is  0.00. As the p-value is less than the significance level <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average backers_count  for a failed campaign is < 50</p>**
   
   
-**A frequency plot  to capture the relationship between state and goal is shown as below
+**A frequency plot  to capture the relationship between state and goal is shown as below**
 
 <div style="text-align:center"><img src="graph10.png"></div>
 <div style="text-align:center"><img src="graph11.png"></div>
 
-**It shows that majority of the successful campaigns tend to have smaller goal than failed campaigns
+**It shows that majority of the successful campaigns tend to have smaller goal than failed campaigns**
 
 
 The below are the sample statistics that has been obtained for the goal amount.
@@ -151,4 +151,24 @@ Z Statistic = -11.05 and  P value is  0.00. As the p-value is less than the sign
 
 Z Statistic = 2.86 and  P value is  0.0021. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average goal amount  for a failed campaign is > 30,000 </p>**
 
+**A frequency plot to capture the relationship between  state and duration is shown as below**
+
+<div style="text-align:center"><img src="table4.png"></div>
+
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the mean of the duration for the successful and failed campaigns respectively. Here also, for the same reasons explained in section <a href="#z-test">above</a>, z-test can be performed.
+
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 33 </p>
+<p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> < 33 </p>
+
+Z Statistic = -4.21 and  P value is  0.00. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a successful campaign is < 33 days</p>**
+  
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 34 </p>
+<p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  > 34 </p>
+
+Z Statistic = 3.12 and  P value is  0.0009. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a failed campaign is > 34 </p>**
+
+**A pivot table between state and staff_pick showing the count of campaigns. This is to understand if there is any advantage of being chosen as a staff_pick campaign**
 
