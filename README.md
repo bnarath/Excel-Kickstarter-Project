@@ -84,8 +84,114 @@ Along with the plots used to explain above conclusions, the below ones could be 
 
 - A pivot table between state and staff_pick showing the count of campaigns. This is to understand if there is any advantage of being chosen as a staff_pick campaign
 
-## Statistical Analysis and Final Conclusions
 
 The statistical measures on backers count for successful and failed campaigns are as shown below
 
+<div style="text-align:center"><img src="table1.png"></div>
 
+Median summarizes the data better. Here mean appears to be skewed towards the max as large number of backers in a few campaigns skews the average towards them. Whereas median being the middle value gives a better understanding that half a times the number of backers is less than median, and a half a times greater than that. Also, note that Standard Deviation is very high. This also indicates that using Mean is not a good idea to summarize the data
+
+## Statistical Analysis and Final Conclusions
+
+**A frequency plot  to capture the relationship between state and backers (1 each for success and failed states) is shown as below. 
+
+<div style="text-align:center"><img src="graph8.png"></div>
+<div style="text-align:center"><img src="graph9.png"></div>
+
+**It shows that lesser number of campaigns have higher number of backers.
+However, majority of successful campaigns tend to have more backers**
+
+<span id="z-test">Statistical Analysis:</span>
+
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the mean of backers count for the successful and failed campaigns respectively. The below are the sample statistics that has been obtained for the backers count. As per central limit theorem(CLT), sample mean is normally distributed with mean and std. deviation equals to <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\sigma&space;}{\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\sigma&space;}{\sqrt{n}}" title="\frac{\sigma }{\sqrt{n}}" /></a> where <a href="https://www.codecogs.com/eqnedit.php?latex=\mu" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu" title="\mu" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma" title="\sigma" /></a> are the mean and the standard deviation of the population. As the samples are large (> 30), we can also approximate <a href="https://www.codecogs.com/eqnedit.php?latex=\sigma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sigma" title="\sigma" /></a>/√n as s/√n where is s is the standard deviation of samples. 
+
+<div style="text-align:center"><img src="table2.png"></div>
+
+We can perform z-test to validate the below hypothesis statistically. Significance level, <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01 is being used in all the tests
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 150 </p>
+<p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> > 150 </p>
+
+Z Statistic is <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{\bar{x}&space;-&space;\mu&space;}{s/\sqrt{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{\bar{X}&space;-&space;\mu&space;}{s/\sqrt{n}}" title="\frac{\bar{x} - \mu }{s/\sqrt{n}}" /></a>  where <a href="https://www.codecogs.com/eqnedit.php?latex=\bar{X}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\bar{X}" title="\bar{X}" /></a> is the sample mean, S is the standard deviation of the sample (standard error) and n is the number of samples. Z Statistic = 2.4595 and  P value is  
+0.0069. This P value is the probability of observing the sample mean as it is, given the population  mean (mean backers_count) is 150. As the p-value is less than the significance level <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average backers_count  for a successful campaign is > 150</p>**
+
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 50 </p>
+<p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  < 50 </p>
+
+Z Statistic = -20.56 and  P value is  0.00. As the p-value is less than the significance level <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average backers_count  for a failed campaign is < 50</p>**
+  
+  
+**A frequency plot  to capture the relationship between state and goal is shown as below**
+
+<div style="text-align:center"><img src="graph10.png"></div>
+<div style="text-align:center"><img src="graph11.png"></div>
+
+**It shows that majority of the successful campaigns tend to have smaller goal than failed campaigns**
+
+
+The below are the sample statistics that has been obtained for the goal amount.
+
+<div style="text-align:center"><img src="table3.png"></div>
+
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the the mean of the goal amount for the successful and failed campaigns respectively. Here also, for the same reasons explained in section <a href="#z-test">above</a>, z-test can be performed
+  
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 150,000 </p>
+<p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> < 150,000 </p>
+
+Z Statistic = -11.05 and  P value is  0.00. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average goal amount  for a successful campaign is < 15,000</p>**
+
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 30,000 </p>
+<p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  > 30,000 </p>
+
+Z Statistic = 2.86 and  P value is  0.0021. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average goal amount  for a failed campaign is > 30,000 </p>**
+
+**A frequency plot to capture the relationship between  state and duration is shown as below**
+
+<div style="text-align:center"><img src="table4.png"></div>
+
+Let <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{s}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{s}" title="\mu _{s}" /></a> and  <a href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> be the mean of the duration for the successful and failed campaigns respectively. Here also, for the same reasons explained in section <a href="#z-test">above</a>, z-test can be performed.
+
+
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\geq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\geq" title="\geq" /></a> 33 </p>
+<p style="text-align:centre, float:left">  Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{S}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{S}" title="\mu _{S}" /></a> < 33 </p>
+
+Z Statistic = -4.21 and  P value is  0.00. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a successful campaign is < 33 days</p>**
+  
+<p>Hypothesis:</p>
+<p style="text-align:centre, float:left"> Null hypothesis, Ho  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a> <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\leq" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\leq" title="\leq" /></a> 34 </p>
+<p style="text-align:centre, float:left"> Alternate hypothesis H1  :  <a style="float:left" href="https://www.codecogs.com/eqnedit.php?latex=\mu&space;_{F}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu&space;_{F}" title="\mu _{F}" /></a>  > 34 </p>
+
+Z Statistic = 3.12 and  P value is  0.0009. As the p-value is less than the significance level  <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a> = 0.01, null hypothesis is rejected. **<p style="color:red">Implies that, average duration  for a failed campaign is > 34 days</p>**
+
+**A pivot table between state and staff_pick showing the count of campaigns. This is to understand if there is any advantage of being chosen as a staff_pick campaign**
+
+<div style="text-align:center"><img src="table5.png"></div>
+
+
+**Though only, a small percentage of the campaigns were staff picked (552 out of 3715 = 15%), once picked, campaigns show a success rate of 88%. Means, all the work needs to get packed by Kickstarter staffs seems to worth a lot.**
+
+Statistical Analysis:
+
+Chi-square test of independence is performed to validate the below hypothesis
+
+<p>Hypothesis:</p>
+<p>H0  :  Campaign states and  staff_pick feature are independent</p>
+<p>H1  :  Campaign states and  staff_pick feature are NOT independent<p>
+
+<div style="text-align:center"><img src="table6.png"></div>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> statistic = 228.64
+df = 1
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> critical value = 6.63
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> statistic > <a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> critical value
+
+Alternatively, p value is 0 which is less than 0.01. Hence the Null hypothesis is rejected. 
+**<p style="color:red">Implies, Campaign states and  staff_pick feature are NOT independent</p>**
