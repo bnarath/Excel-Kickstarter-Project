@@ -174,7 +174,8 @@ Z Statistic = 3.12 and  P value is  0.0009. As the p-value is less than the sign
 
 <div style="text-align:center"><img src="table5.png"></div>
 
-**Though only, a small percentage of the campaigns were staff picked (552 out of 3715 = 15%), once picked, campaigns show a success rate of 88%. Means, all the work needs to get packed by Kickstarter staffs seems to worth a lot. **
+
+**Though only, a small percentage of the campaigns were staff picked (552 out of 3715 = 15%), once picked, campaigns show a success rate of 88%. Means, all the work needs to get packed by Kickstarter staffs seems to worth a lot.**
 
 Statistical Analysis:
 
