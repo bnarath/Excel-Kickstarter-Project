@@ -185,3 +185,13 @@ Chi-square test of independence is performed to validate the below hypothesis
 <p>H0  :  Campaign states and  staff_pick feature are independent</p>
 <p>H1  :  Campaign states and  staff_pick feature are NOT independent<p>
 
+<div style="text-align:center"><img src="table6.png"></div>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> statistic = 228.64
+df = 1
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> critical value = 6.63
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> statistic > <a href="https://www.codecogs.com/eqnedit.php?latex=^{\chi&space;^{2}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?^{\chi&space;^{2}}" title="^{\chi ^{2}}" /></a> critical value
+
+Alternatively, p value is 0 which is less than 0.01. Hence the Null hypothesis is rejected. 
+**<p style="color:red">Implies, Campaign states and  staff_pick feature are NOT independent</p>**
