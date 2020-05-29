@@ -1,7 +1,7 @@
 # Excel-Kickstarter-Project
 
 ## Problem Description: 
-Though, over 2B is raised is Kickstarter crowdfunding platform, only a third of campaigns are successful in raising the required funds. 
+Though, over 2B is raised in Kickstarter crowdfunding platform, only a third of campaigns are successful in raising the required funds. 
 
 
 ## Analysis Goal: 
